@@ -1,0 +1,7 @@
+- hosts: winhost # host group to run the module on
+  tasks:
+    - name: run an executable command on a remote machine
+      win_updates:
+        category_names: '*'
+        reboot: yes
+        log_path: c:\ansible_wu.txt
