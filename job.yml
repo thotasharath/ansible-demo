@@ -1,4 +1,4 @@
-- hosts: winhost # host group to run the module on
+- hosts: winhost # host group to run the module on windows machine
   tasks:
     - name: run an executable command on a remote machine
       win_updates:
